@@ -1,0 +1,56 @@
+// ---------------------------------------------
+//   import partial
+//----------------------------------------------
+@use "sass:math";
+@use "index" as *;
+/* ---------------------------------------------
+*   l-footer
+--------------------------------------------- */
+.l-footer {
+    $host: &;
+
+    &__container {}
+
+    &__logo {}
+
+    &__logo-link {
+        @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+            @include hover-opacity;
+        }
+    }
+
+    &__copyright {}
+
+    &__copyright-txt {}
+}
+
+/*  l-footer-pagetop
+--------------------------------------------- */
+.l-footer-pagetop {
+    $host: &;
+
+    &__link {
+        @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+            @include hover-opacity;
+        }
+    }
+
+    &__txt {}
+}
+
+/*  l-footer-nav
+--------------------------------------------- */
+.l-footer-nav {
+    $host: &;
+
+    &__list {}
+
+    &__item {}
+
+    &__link {
+        @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+            @include hover-opacity;
+        }
+    }
+}
+

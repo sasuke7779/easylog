@@ -1,0 +1,31 @@
+// ---------------------------------------------
+//   import partial
+//----------------------------------------------
+@use "sass:math";
+@use "index" as *;
+/* ---------------------------------------------
+*   c-btn
+--------------------------------------------- */
+.c-btn {
+    $host: &;
+    display: block;
+
+    @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+        transition: background-color $hover-opacity-ms * 1ms;
+
+        &:hover {
+            background-color: $black1;
+
+            #{$host}__txt {
+                color: $white1;
+            }
+        }
+    }
+
+    &__txt {
+        display: block;
+        padding: 15px;
+        border: 1px solid #000;
+        text-align: center;
+    }
+}

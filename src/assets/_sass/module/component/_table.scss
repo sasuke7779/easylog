@@ -1,0 +1,27 @@
+// ---------------------------------------------
+//   import partial
+//----------------------------------------------
+@use "sass:math";
+@use "index" as *;
+/* ---------------------------------------------
+*   c-table
+--------------------------------------------- */
+.c-table {
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+
+    &__th,
+    &__td {
+        padding: 1em;
+        border-bottom: 1px solid #000;
+        border-left: 1px solid #000;
+    }
+
+    &__thead &__th {
+        color: red;
+    }
+
+    &__tbody &__th {
+        font-weight: bold;
+    }
+}
