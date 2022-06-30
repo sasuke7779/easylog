@@ -14,7 +14,7 @@
     left: 0;
     z-index: 999;
     height: $fixed-header-height-pc * 1px;
-    background-color: $white1;
+    background-color: $theme1;
     @media screen and (max-width: #{$breakpoint-sp}px) {
         height: $fixed-header-height-sp * 1px;
     }
@@ -24,15 +24,17 @@
         justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
-        max-width: 1000px;
         margin: 0 auto;
         height: 100%;
-        padding: 1rem;
+        padding: 1.5rem;
     }
 
     &__logo {}
 
     &__logo-link {
+      color: $white1;
+      font-weight: bold;
+      font-size: pxtorem(30, 'pc');
         @media screen and (min-width: #{$breakpoint-sp + 1}px) {
             @include hover-opacity;
         }
@@ -63,12 +65,14 @@
     }
 }
 
-/*  l-header-sp-trigger
+/*  l-header-menu-trigger
 --------------------------------------------- */
-.l-header-sp-trigger {
-    @media screen and (min-width: #{$breakpoint-sp + 1}px) {
-        display: none;
-    }
-
-    &__txt {}
+.l-header-menu-trigger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }

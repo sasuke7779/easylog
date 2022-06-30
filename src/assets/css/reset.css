@@ -87,7 +87,7 @@ input, button, textarea, select {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
-    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "meiryo", sans-serif;
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "meiryo", sans-serif;
 }
 
 button {

@@ -22,37 +22,31 @@
 *   l-contents
 --------------------------------------------- */
 .l-contents {
-    padding-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+    padding-top: 60px;
+    background-color: red;
 }
 
 /* ---------------------------------------------
 *   l-footer
 --------------------------------------------- */
-@media screen and (min-width: 751px) {
-    .l-footer__logo-link {
-        transition: opacity 300ms;
-    }
-    .l-footer__logo-link:hover {
-        opacity: 0.8;
-    }
+.l-footer {
+    padding: 1.5rem;
+    border-top: 1px solid #000;
 }
-/*  l-footer-pagetop
+.l-footer__container {
+    text-align: center;
+}
+
+/*  l-footer-links
 --------------------------------------------- */
 @media screen and (min-width: 751px) {
-    .l-footer-pagetop__link {
+    .l-footer-links__link {
         transition: opacity 300ms;
     }
-    .l-footer-pagetop__link:hover {
-        opacity: 0.8;
-    }
-}
-/*  l-footer-nav
---------------------------------------------- */
-@media screen and (min-width: 751px) {
-    .l-footer-nav__link {
-        transition: opacity 300ms;
-    }
-    .l-footer-nav__link:hover {
+    .l-footer-links__link:hover {
         opacity: 0.8;
     }
 }
@@ -72,8 +66,8 @@
     right: 0;
     left: 0;
     z-index: 999;
-    height: 80px;
-    background-color: #fff;
+    height: 60px;
+    background-color: #65B3B3;
 }
 @media screen and (max-width: 750px) {
     .l-header {
@@ -85,10 +79,14 @@
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    max-width: 1000px;
     margin: 0 auto;
     height: 100%;
-    padding: 1rem;
+    padding: 1.5rem;
+}
+.l-header__logo-link {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.875rem;
 }
 @media screen and (min-width: 751px) {
     .l-header__logo-link {
@@ -119,13 +117,18 @@
     }
 }
 
-/*  l-header-sp-trigger
+/*  l-header-menu-trigger
 --------------------------------------------- */
-@media screen and (min-width: 751px) {
-    .l-header-sp-trigger {
-        display: none;
-    }
+.l-header-menu-trigger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
+
 /* ---------------------------------------------
 *   l-wrapper
 --------------------------------------------- */

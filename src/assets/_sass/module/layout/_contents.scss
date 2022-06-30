@@ -8,5 +8,9 @@
 --------------------------------------------- */
 .l-contents {
     $host: &;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
     padding-top: $fixed-header-height-pc * 1px;
+    background-color: red;
 }

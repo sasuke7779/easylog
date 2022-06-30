@@ -15,6 +15,13 @@ export default {
         link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
         link: [{ rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
         link: [{ rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }],
+        // fonts
+        link: [
+            {
+                rel: 'stylesheet',
+                href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap',
+            },
+        ],
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
@@ -38,12 +45,19 @@ export default {
     modules: [
         // https://go.nuxtjs.dev/axios
         '@nuxtjs/axios',
+        'nuxt-fontawesome',
     ],
 
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
     axios: {
         // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
         baseURL: '/',
+    },
+    /*
+     ** FontAwesome
+     */
+    fontawesome: {
+        component: 'fa',
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build

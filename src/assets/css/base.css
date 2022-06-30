@@ -12,7 +12,7 @@ html,
 body {
     color: #000;
     font-size: 16px;
-    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "meiryo", sans-serif;
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "meiryo", sans-serif;
     -webkit-text-size-adjust: 100%;
 }
 @media screen and (max-width: 750px) {
