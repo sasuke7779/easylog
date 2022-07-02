@@ -6,7 +6,36 @@
       </div>
     </section>
 
-    <!-- [/c-block-links] -->
+    <div class="c-block-form">
+      <div class="c-block-form__container">
+        <form action="" class="c-form-sign">
+          <div class="c-form-sign__item">
+            <label for="email">メールアドレス</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="c-form-input-email"
+            />
+          </div>
+          <div class="c-form-sign__item">
+            <label for="password">パスワード</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="c-form-input-pw"
+            />
+          </div>
+          <NuxtLink to="/signin" class="c-form-sign__switch-link"
+            >ログインはこちら</NuxtLink
+          >
+          <button type="button" class="c-form-submit">登録</button>
+        </form>
+        <!-- [/c-form-sign] -->
+      </div>
+    </div>
+    <!-- [/c-block-form] -->
   </div>
 </template>
 

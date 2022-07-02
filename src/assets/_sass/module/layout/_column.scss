@@ -4,14 +4,21 @@
 @use 'sass:math';
 @use 'index' as *;
 /* ---------------------------------------------
-*   l-contents
+*   l-column
 --------------------------------------------- */
-.l-contents {
+.l-column {
   $host: &;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 40px 40px 40px;
-  max-width: 1280px;
-  min-width: 1280px;
-  padding-top: $fixed-header-height-pc * 1px;
+  margin-top: 40px;
+  &__container {
+    display: flex;
+  }
+
+  &__main {
+    width: 75%;
+    padding-right: 30px;
+  }
+
+  &__side {
+    width: 25%;
+  }
 }

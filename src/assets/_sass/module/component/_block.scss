@@ -45,3 +45,59 @@
     gap: 20px;
   }
 }
+
+/* ---------------------------------------------
+*   c-block-form
+--------------------------------------------- */
+.c-block-form {
+  &__container {
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* ---------------------------------------------
+*   c-block-selector
+--------------------------------------------- */
+.c-block-selector {
+  &__row {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+}
+
+/* ---------------------------------------------
+*   c-block-table
+--------------------------------------------- */
+.c-block-table {
+  $host: &;
+  margin-top: 40px;
+}
+
+/* ---------------------------------------------
+*   c-block-result
+--------------------------------------------- */
+.c-block-result {
+  $host: &;
+  position: sticky;
+  top: $fixed-header-height-pc * 1px;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  background-color: $theme1;
+  border-radius: 5px;
+
+  &__container {
+    padding: 15px;
+    width: 100%;
+    height: 800px;
+    background-color: $white1;
+    border-radius: 5px;
+  }
+}

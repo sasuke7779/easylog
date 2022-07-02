@@ -1,38 +1,77 @@
 // ---------------------------------------------
 //   import partial
 //----------------------------------------------
-@use "sass:math";
-@use "index" as *;
+@use 'sass:math';
+@use 'index' as *;
 /* ---------------------------------------------
 *   c-form
 --------------------------------------------- */
-.c-form {
+.c-form-sign {
+  $host: &;
+  &__label {
+  }
 
-    &__label {}
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
 
-    &__item {}
+  &__switch-link {
+    display: inline-block;
+  }
 }
 
 /*  c-form-input-txt
 --------------------------------------------- */
-.c-form-input-txt {}
+.c-form-input-email {
+  padding: 10px 20px;
+  display: block;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
 
 /*  c-form-input-pw
 --------------------------------------------- */
-.c-form-input-pw {}
+.c-form-input-pw {
+  padding: 10px 20px;
+  display: block;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+/*  c-form-submit
+--------------------------------------------- */
+.c-form-submit {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  padding: 10px 20px;
+  max-width: 300px;
+  width: 100%;
+  color: $white1;
+  font-size: pxtorem(24, 'pc');
+  background-color: $theme1;
+  border-radius: 5px;
+}
 
 /*  c-form-txtarea
 --------------------------------------------- */
-.c-form-txtarea {}
+.c-form-txtarea {
+}
 
 /*  c-form-select
 --------------------------------------------- */
-.c-form-select {}
+.c-form-select {
+}
 
 /*  c-form-chkbox
 --------------------------------------------- */
-.c-form-chkbox {}
+.c-form-chkbox {
+}
 
 /*  c-form-radio
 --------------------------------------------- */
-.c-form-radio {}
+.c-form-radio {
+}

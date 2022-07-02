@@ -55,10 +55,15 @@ $fixed-header-height-sp: 60;
 
 //   color
 //----------------------------------------------
-$black1: #000;
+$black1: #202124;
+$black2: #4d5156;
 $white1: #fff;
 $gray1: #ccc;
 $theme1: #65b3b3; //サイトテーマカラー
+$green1: #00d964;
+$green2: #f7f9f2;
+$red1: #ff0000;
+$red2: #f9f3f2;
 
 //   line height
 //----------------------------------------------
@@ -71,7 +76,7 @@ $line-height-sp: 1.5;
 $root-fz-pc: 16;
 $root-fz-tb: 32;
 $root-fz-sp: 32; // デザイン幅が375の場合は16に変更すること
-$root-fc: $black1;
+$root-fc: $black2;
 $root-ff: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'meiryo', sans-serif;
 
 //   hover

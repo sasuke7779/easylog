@@ -1,27 +1,40 @@
 // ---------------------------------------------
 //   import partial
 //----------------------------------------------
-@use "sass:math";
-@use "index" as *;
+@use 'sass:math';
+@use 'index' as *;
 /* ---------------------------------------------
 *   c-table
 --------------------------------------------- */
 .c-table {
-    border-top: 1px solid #000;
-    border-right: 1px solid #000;
+  $host: &;
+  width: 100%;
 
-    &__th,
-    &__td {
-        padding: 1em;
-        border-bottom: 1px solid #000;
-        border-left: 1px solid #000;
+  &__dl {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border: 1px solid $black1;
+
+    &--head {
+      position: sticky;
+      top: $fixed-header-height-pc * 1px;
+      margin-top: 0;
+      background-color: $white1;
     }
 
-    &__thead &__th {
-        color: red;
+    &--profit {
+      background-color: $green2;
     }
 
-    &__tbody &__th {
-        font-weight: bold;
+    &--loss {
+      background-color: $red2;
     }
+  }
+
+  &__dd {
+    padding: 0.8em;
+    width: 16.666%;
+    word-break: break-all;
+  }
 }

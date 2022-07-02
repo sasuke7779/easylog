@@ -4,14 +4,9 @@
 @use 'sass:math';
 @use 'index' as *;
 /* ---------------------------------------------
-*   l-contents
+*   c-item
 --------------------------------------------- */
-.l-contents {
-  $host: &;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 40px 40px 40px;
-  max-width: 1280px;
-  min-width: 1280px;
-  padding-top: $fixed-header-height-pc * 1px;
+.c-item-icon {
+  color: $black2;
+  font-size: pxtorem(16, 'pc');
 }
