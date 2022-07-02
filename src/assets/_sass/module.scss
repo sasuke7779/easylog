@@ -3,7 +3,6 @@
 @use 'module/layout/column';
 @use 'module/layout/contents';
 @use 'module/layout/footer';
-@use 'module/layout/global-nav';
 @use 'module/layout/header';
 @use 'module/layout/wrapper';
 // component
@@ -21,7 +20,6 @@
 @use 'module/component/section';
 @use 'module/component/slider';
 @use 'module/component/table';
-@use 'module/component/tile';
 @use 'module/component/ttl';
 @use 'module/component/txt';
 @use 'module/component/item';
