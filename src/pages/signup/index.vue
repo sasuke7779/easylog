@@ -1,7 +1,17 @@
-<template></template>
+<template>
+  <div class="l-contents">
+    <section class="c-section-top">
+      <div class="c-section-top__container">
+        <h2 class="c-ttl-top">新規登録</h2>
+      </div>
+    </section>
+
+    <!-- [/c-block-links] -->
+  </div>
+</template>
 
 <script>
 export default {
-    name: "TopPage",
+  name: "SignUp",
 };
 </script>

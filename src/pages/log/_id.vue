@@ -2,7 +2,7 @@
   <div class="l-contents">
     <section class="c-section-top">
       <div class="c-section-top__container">
-        <h2 class="c-ttl-top">LogTop</h2>
+        <h2 class="c-ttl-top">タブページ</h2>
       </div>
     </section>
 
@@ -12,6 +12,6 @@
 
 <script>
 export default {
-  name: "LogTop",
+  name: "LogTab",
 };
 </script>

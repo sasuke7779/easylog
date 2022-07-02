@@ -1,8 +1,8 @@
 // ---------------------------------------------
 //   import partial
 //----------------------------------------------
-@use "sass:math";
-@use "index" as *;
+@use 'sass:math';
+@use 'index' as *;
 /* ---------------------------------------------
 *   c-txt
 --------------------------------------------- */
@@ -19,5 +19,13 @@
 
     &__italic {
         font-style: italic;
+    }
+}
+
+.c-txt-lead {
+    // font-weight: bold;
+    font-size: pxtorem(24, 'pc');
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        font-size: pxtorem(30, 'sp');
     }
 }

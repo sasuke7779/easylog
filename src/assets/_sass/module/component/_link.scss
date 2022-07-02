@@ -1,13 +1,19 @@
 // ---------------------------------------------
 //   import partial
 //----------------------------------------------
-@use "sass:math";
-@use "index" as *;
+@use 'sass:math';
+@use 'index' as *;
 /* ---------------------------------------------
 *   c-link
 --------------------------------------------- */
-.c-link {
-    @media screen and (min-width: #{$breakpoint-sp + 1}px) {
-        @include hover-underline-none;
-    }
+.c-link-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: pxtorem(24, 'pc');
+  background-color: $gray1;
+  border-radius: 5px;
+  @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+    @include hover-opacity;
+  }
 }
