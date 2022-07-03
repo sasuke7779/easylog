@@ -10,8 +10,23 @@
   $host: &;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 40px 40px 40px;
   max-width: 1280px;
   min-width: 1280px;
   padding-top: $fixed-header-height-pc * 1px;
+
+  @media screen and (max-width: #{$breakpoint-sp}px) {
+    padding: 0 pxtovw(0, 'sp') pxtovw(0, 'sp') pxtovw(0, 'sp');
+    min-width: 0;
+    width: 100%;
+    padding-top: $fixed-header-height-pc * 1px;
+  }
+
+  &__inner {
+    padding: 0 40px 40px 40px;
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+      padding: 0 pxtovw(20, 'sp') pxtovw(0, 'sp') pxtovw(20, 'sp');
+      width: 100%;
+    }
+  }
 }

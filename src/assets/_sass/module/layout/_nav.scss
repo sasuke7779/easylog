@@ -1,0 +1,40 @@
+// ---------------------------------------------
+//   import partial
+//----------------------------------------------
+@use 'sass:math';
+@use 'index' as *;
+/* ---------------------------------------------
+*   l-bottom-bar
+--------------------------------------------- */
+.l-bottom-bar {
+  $host: &;
+  margin-top: pxtovw(10, 'sp');
+  position: sticky;
+  bottom: 0;
+  background-color: $theme1;
+
+  @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+    display: none;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: pxtovw(40, 'sp');
+    align-items: center;
+    padding: pxtovw(10, 'sp') pxtovw(20, 'sp');
+    height: 60px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: $black2;
+    font-size: pxtovw(32, 'sp');
+    background-color: $white1;
+    border-radius: 50%;
+  }
+}

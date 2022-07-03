@@ -1,78 +1,80 @@
 // ---------------------------------------------
 //   import partial
 //----------------------------------------------
-@use "sass:math";
-@use "index" as *;
+@use 'sass:math';
+@use 'index' as *;
 /* ---------------------------------------------
 *   l-header
 --------------------------------------------- */
 .l-header {
-    $host: &;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 999;
-    height: $fixed-header-height-pc * 1px;
-    background-color: $theme1;
-    @media screen and (max-width: #{$breakpoint-sp}px) {
-        height: $fixed-header-height-sp * 1px;
-    }
+  $host: &;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  height: $fixed-header-height-pc * 1px;
+  background-color: $theme1;
+  @media screen and (max-width: #{$breakpoint-sp}px) {
+    position: absolute;
+    height: $fixed-header-height-sp * 1px;
+  }
 
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-sizing: border-box;
-        margin: 0 auto;
-        height: 100%;
-        padding: 1.5rem;
-    }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 100%;
+    padding: 1.5rem;
+  }
 
-    &__logo {}
+  &__logo {
+  }
 
-    &__logo-link {
-      color: $white1;
-      font-weight: bold;
-      font-size: pxtorem(30, 'pc');
-        @media screen and (min-width: #{$breakpoint-sp + 1}px) {
-            @include hover-opacity;
-        }
+  &__logo-link {
+    color: $white1;
+    font-weight: bold;
+    font-size: pxtorem(30, 'pc');
+    @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+      @include hover-opacity;
     }
+  }
 }
 
 /*  l-header-nav
 --------------------------------------------- */
 .l-header-nav {
-    $host: &;
+  $host: &;
 
-    &__list {
-        display: flex;
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-left: 1em;
+
+    &:first-of-type {
+      margin-left: 0;
     }
+  }
 
-    &__item {
-        margin-left: 1em;
-
-        &:first-of-type {
-            margin-left: 0;
-        }
+  &__link {
+    @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+      @include hover-opacity;
     }
-
-    &__link {
-        @media screen and (min-width: #{$breakpoint-sp + 1}px) {
-            @include hover-opacity;
-        }
-    }
+  }
 }
 
 /*  l-header-menu-trigger
 --------------------------------------------- */
 .l-header-menu-trigger {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $white1;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }

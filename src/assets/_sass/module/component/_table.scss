@@ -16,11 +16,22 @@
     margin-top: 10px;
     border: 1px solid $black1;
 
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin-top: pxtovw(10, 'sp');
+      border-radius: pxtovw(5, 'sp');
+    }
+
     &--head {
       position: sticky;
       top: $fixed-header-height-pc * 1px;
       margin-top: 0;
       background-color: $white1;
+
+      @media screen and (max-width: #{$breakpoint-sp}px) {
+        top: 0;
+      }
     }
 
     &--profit {
@@ -36,5 +47,10 @@
     padding: 0.8em;
     width: 16.666%;
     word-break: break-all;
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+      padding: 0.2em 0.5em;
+      width: 45%;
+    }
   }
 }

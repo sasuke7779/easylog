@@ -20,6 +20,10 @@
   border: 1px solid $black2;
   border-radius: 5px;
 
+  @media screen and (max-width: #{$breakpoint-sp}px) {
+    padding: pxtovw(10, 'sp') 20px pxtovw(10, 'sp') 40px;
+  }
+
   &--select {
     padding: 0;
 
@@ -28,11 +32,19 @@
       color: $black2;
       font-size: pxtorem(16, 'pc');
       cursor: pointer;
+
+      @media screen and (max-width: #{$breakpoint-sp}px) {
+        padding: pxtovw(10, 'sp') 20px pxtovw(10, 'sp') 40px;
+      }
     }
   }
 
   &--icon {
     padding: 10px;
+
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+      padding: pxtovw(10, 'sp') pxtovw(20, 'sp');
+    }
   }
 
   &__setting {

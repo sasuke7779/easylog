@@ -63,6 +63,7 @@
 .c-block-selector {
   &__row {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 10px;
     gap: 10px;
 
@@ -78,6 +79,10 @@
 .c-block-table {
   $host: &;
   margin-top: 40px;
+
+  @media screen and (max-width: #{$breakpoint-sp}px) {
+    margin-top: pxtovw(40, 'sp');
+  }
 }
 
 /* ---------------------------------------------

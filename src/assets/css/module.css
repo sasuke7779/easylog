@@ -4,6 +4,11 @@
 .l-column {
     margin-top: 40px;
 }
+@media screen and (max-width: 750px) {
+    .l-column {
+        margin-top: 5.3333333333vw;
+    }
+}
 .l-column__container {
     display: flex;
 }
@@ -11,8 +16,21 @@
     width: 75%;
     padding-right: 30px;
 }
+@media screen and (max-width: 750px) {
+    .l-column__main {
+        padding-right: 0;
+        width: 100%;
+    }
+}
 .l-column__side {
     width: 25%;
+}
+@media screen and (max-width: 750px) {
+    .l-column__side {
+        position: fixed;
+        display: none;
+        width: 100%;
+    }
 }
 
 /* ---------------------------------------------
@@ -21,10 +39,26 @@
 .l-contents {
     margin-right: auto;
     margin-left: auto;
-    padding: 0 40px 40px 40px;
     max-width: 1280px;
     min-width: 1280px;
     padding-top: 60px;
+}
+@media screen and (max-width: 750px) {
+    .l-contents {
+        padding: 0 0vw 0vw 0vw;
+        min-width: 0;
+        width: 100%;
+        padding-top: 60px;
+    }
+}
+.l-contents__inner {
+    padding: 0 40px 40px 40px;
+}
+@media screen and (max-width: 750px) {
+    .l-contents__inner {
+        padding: 0 2.6666666667vw 0vw 2.6666666667vw;
+        width: 100%;
+    }
 }
 
 /* ---------------------------------------------
@@ -50,12 +84,6 @@
 }
 
 /* ---------------------------------------------
-*   l-global-nav
---------------------------------------------- */
-.l-global-nav {
-    display: none;
-}
-/* ---------------------------------------------
 *   l-header
 --------------------------------------------- */
 .l-header {
@@ -69,6 +97,7 @@
 }
 @media screen and (max-width: 750px) {
     .l-header {
+        position: absolute;
         height: 60px;
     }
 }
@@ -131,6 +160,40 @@
 *   l-wrapper
 --------------------------------------------- */
 /* ---------------------------------------------
+*   l-bottom-bar
+--------------------------------------------- */
+.l-bottom-bar {
+    margin-top: 1.3333333333vw;
+    position: sticky;
+    bottom: 0;
+    background-color: #65b3b3;
+}
+@media screen and (min-width: 751px) {
+    .l-bottom-bar {
+        display: none;
+    }
+}
+.l-bottom-bar__container {
+    display: flex;
+    justify-content: center;
+    gap: 5.3333333333vw;
+    align-items: center;
+    padding: 1.3333333333vw 2.6666666667vw;
+    height: 60px;
+}
+.l-bottom-bar__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: #4d5156;
+    font-size: 4.2666666667vw;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+/* ---------------------------------------------
 *   c-block-top-lead
 --------------------------------------------- */
 .c-block-top-lead {
@@ -191,6 +254,7 @@
 --------------------------------------------- */
 .c-block-selector__row {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 10px;
     gap: 10px;
 }
@@ -203,6 +267,11 @@
 --------------------------------------------- */
 .c-block-table {
     margin-top: 40px;
+}
+@media screen and (max-width: 750px) {
+    .c-block-table {
+        margin-top: 5.3333333333vw;
+    }
 }
 
 /* ---------------------------------------------
@@ -238,6 +307,11 @@
     border: 1px solid #4d5156;
     border-radius: 5px;
 }
+@media screen and (max-width: 750px) {
+    .c-box-label {
+        padding: 1.3333333333vw 20px 1.3333333333vw 40px;
+    }
+}
 .c-box-label--select {
     padding: 0;
 }
@@ -247,8 +321,18 @@
     font-size: 1rem;
     cursor: pointer;
 }
+@media screen and (max-width: 750px) {
+    .c-box-label--select select {
+        padding: 1.3333333333vw 20px 1.3333333333vw 40px;
+    }
+}
 .c-box-label--icon {
     padding: 10px;
+}
+@media screen and (max-width: 750px) {
+    .c-box-label--icon {
+        padding: 1.3333333333vw 2.6666666667vw;
+    }
 }
 .c-box-label__setting {
     position: absolute;
@@ -479,11 +563,24 @@
     margin-top: 10px;
     border: 1px solid #202124;
 }
+@media screen and (max-width: 750px) {
+    .c-table__dl {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 1.3333333333vw;
+        border-radius: 0.6666666667vw;
+    }
+}
 .c-table__dl--head {
     position: sticky;
     top: 60px;
     margin-top: 0;
     background-color: #fff;
+}
+@media screen and (max-width: 750px) {
+    .c-table__dl--head {
+        top: 0;
+    }
 }
 .c-table__dl--profit {
     background-color: #f7f9f2;
@@ -496,10 +593,13 @@
     width: 16.666%;
     word-break: break-all;
 }
+@media screen and (max-width: 750px) {
+    .c-table__dd {
+        padding: 0.2em 0.5em;
+        width: 45%;
+    }
+}
 
-/* ---------------------------------------------
-*   c-tile
---------------------------------------------- */
 /* ---------------------------------------------
 *   c-ttl
 --------------------------------------------- */
