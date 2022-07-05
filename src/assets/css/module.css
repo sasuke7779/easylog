@@ -244,7 +244,7 @@
 *   c-block-form
 --------------------------------------------- */
 .c-block-form__container {
-    max-width: 400px;
+    max-width: 500px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -462,16 +462,20 @@
 /*  c-form-submit
 --------------------------------------------- */
 .c-form-submit {
+    margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
     display: block;
     padding: 10px 20px;
-    max-width: 300px;
+    max-width: 400px;
     width: 100%;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     background-color: #65b3b3;
     border-radius: 5px;
+}
+.c-form-submit:first-of-type {
+    margin-top: 0;
 }
 
 /*  c-form-txtarea

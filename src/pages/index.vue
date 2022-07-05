@@ -14,12 +14,24 @@
       </div>
     </section>
 
-    <div class="c-block-links">
+    <div class="c-block-form">
+      <div class="c-block-form__container">
+        <button type="button" class="c-form-submit" @click="login">
+          Googleアカウントでログイン
+        </button>
+        <button type="button" class="c-form-submit" @click="loginGuest">
+          ゲストとしてログイン
+        </button>
+        <!-- [/c-form-sign] -->
+      </div>
+    </div>
+
+    <!-- <div class="c-block-links">
       <div class="c-block-links__container">
         <NuxtLink to="/signin" class="c-link-btn">ログイン</NuxtLink>
         <NuxtLink to="/signup" class="c-link-btn">新規登録</NuxtLink>
       </div>
-    </div>
+    </div> -->
     <!-- [/c-block-links] -->
   </div>
 </template>
@@ -27,5 +39,13 @@
 <script>
 export default {
   name: "TopPage",
+  methods: {
+    login() {
+      this.$store.dispatch("login");
+    },
+    loginGuest() {
+      this.$store.dispatch("loginGuest");
+    },
+  },
 };
 </script>

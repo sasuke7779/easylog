@@ -44,16 +44,21 @@
 /*  c-form-submit
 --------------------------------------------- */
 .c-form-submit {
+  margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
   display: block;
   padding: 10px 20px;
-  max-width: 300px;
+  max-width: 400px;
   width: 100%;
   color: $white1;
-  font-size: pxtorem(24, 'pc');
+  font-size: pxtorem(20, 'pc');
   background-color: $theme1;
   border-radius: 5px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
 }
 
 /*  c-form-txtarea

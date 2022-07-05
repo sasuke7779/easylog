@@ -44,6 +44,7 @@ export const actions = {
         commit('setUserName', user.displayName);
 
         console.log('login success');
+        $nuxt.$router.push('/log');
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -75,6 +76,7 @@ export const actions = {
         commit('setUserName', user.displayName);
 
         console.log('guest login success');
+        $nuxt.$router.push('/log');
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -99,6 +101,7 @@ export const actions = {
       .then(() => {
         console.log('logout success');
         commit('setLoginStatus', false);
+        $nuxt.$router.push('/');
       })
       .catch((error) => {
         console.log('logout error', error);
