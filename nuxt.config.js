@@ -1,5 +1,11 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+  ssr: false,
+
+  // Target: https://go.nuxtjs.dev/config-target
+  target: 'static',
+
   srcDir: 'src/',
   head: {
     title: 'easylog',
@@ -31,6 +37,10 @@ export default {
     '@/assets/css/plugin.css',
     '@/assets/css/module.css',
   ],
+
+  router: {
+    middleware: 'authenticated',
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [{ src: '~plugins/firebase', mode: 'client' }],
