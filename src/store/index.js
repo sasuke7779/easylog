@@ -1,7 +1,6 @@
 import {
   GoogleAuthProvider,
   getAuth,
-  // signInWithEmailAndPassword,
   signInWithPopup,
   setPersistence,
   browserSessionPersistence,
@@ -107,15 +106,10 @@ export const actions = {
         console.log('logout error', error);
       });
   },
-  onAuth({ commit }) {
-    const auth = getAuth();
-    onAuthStateChanged(auth, (user) => {
-      user = user ? user : {};
-      commit('setUserUid', user.uid);
-      commit('setUserName', user.displayName);
-      commit('setLoginStatus', user.uid ? true : false);
-      console.log('onAuth');
-    });
+  onAuth({ commit }, { user }) {
+    commit('setUserUid', user.uid);
+    commit('setUserName', user.displayName);
+    commit('setLoginStatus', user.uid ? true : false);
   },
 };
 
